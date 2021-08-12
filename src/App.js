@@ -15,13 +15,9 @@ function App() {
         //  Create WalletConnect Provider
       (async()=>{
         const provider = new WalletConnectProvider({
-          rpc: {
-            1: "https://mainnet.mycustomnode.com",
-            3: "https://ropsten.mycustomnode.com",
-            100: "https://dai.poa.network",
-            // ...
-          },
+          infuraId: "27e484dcd9e3efcfd25a83a78777cdf1",
         });
+        
         
         //  Enable session (triggers QR Code modal)
         await provider.enable();
